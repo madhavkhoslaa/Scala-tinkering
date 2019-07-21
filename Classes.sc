@@ -19,6 +19,10 @@ class Vector(val x: Int, val y: Int){
         val cos_val: Double= cos(angle)
         return abs_other*abs_this*cos_val
     }
+
+    def -(other: Vector): Vector= {
+        return new Vector(this.x- other.x, this.y- other.y)
+    }
 }
 
 val v1= new Vector(1, 2)
